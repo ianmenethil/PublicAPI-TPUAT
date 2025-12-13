@@ -1,4 +1,4 @@
-# PublicAPI-TPUAT
+# TravelPay APIs - UAT
 
 This repository automatically downloads the Swagger 2.0 JSON specification from [https://apiuat.travelpay.com.au/v2.0/help](https://apiuat.travelpay.com.au/v2.0/help) on a daily basis, converts it to OpenAPI 3.1 format, and splits the OpenAPI spec into multiple files for easier access.
 
