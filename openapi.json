@@ -132,7 +132,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -263,7 +264,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -391,7 +393,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -514,7 +517,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       },
@@ -582,7 +586,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -684,7 +689,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -793,7 +799,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -926,7 +933,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -1027,7 +1035,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       },
@@ -1141,7 +1150,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -1272,7 +1282,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       },
@@ -1386,7 +1397,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -1517,7 +1529,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       },
@@ -1631,7 +1644,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -1762,7 +1776,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       },
@@ -1876,7 +1891,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -2175,7 +2191,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       },
@@ -2326,7 +2343,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -2474,7 +2492,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -2547,7 +2566,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -2649,7 +2669,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -2751,7 +2772,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -2896,7 +2918,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       },
@@ -3089,7 +3112,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -3253,7 +3277,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -3480,7 +3505,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       },
@@ -3606,7 +3632,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -3712,7 +3739,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -3826,7 +3854,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       },
@@ -3988,7 +4017,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -4180,7 +4210,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -4367,7 +4398,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -4489,7 +4521,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -4591,7 +4624,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -4694,7 +4728,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -4825,7 +4860,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -4953,7 +4989,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -5010,7 +5047,8 @@
         "responses": {},
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ]
       }
@@ -5091,7 +5129,8 @@
         },
         "security": [
           {
-            "Api-Key": []
+            "Api-Key": [],
+            "BasicAuth": []
           }
         ],
         "requestBody": {
@@ -8673,6 +8712,10 @@
         "description": "API Key Authentication",
         "name": "Api-Key",
         "in": "header"
+      },
+      "BasicAuth": {
+        "type": "http",
+        "scheme": "basic"
       }
     }
   }
