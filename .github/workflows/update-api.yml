@@ -41,7 +41,8 @@ jobs:
       - name: Check for changes
         id: verify-changed-files
         run: |
-          if git diff --quiet swagger.json openapi.json openapi/; then
+          git add swagger.json openapi.json openapi/
+          if git diff --cached --quiet swagger.json openapi.json openapi/; then
             echo "No changes detected"
             echo "changed=false" >> $GITHUB_OUTPUT
           else
@@ -54,6 +55,5 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add swagger.json openapi.json openapi/
           git commit -m "Daily API update: download, convert, validate, lint, and split OpenAPI spec"
           git push
