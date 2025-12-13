@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "defaultBranch": "main",
+  "rawBaseUrl": "https://raw.githubusercontent.com/ianmenethil/PublicAPI-TPUAT",
+  "files": {
+    "openapiSpec": "openapi.json",
+    "swaggerSpec": "swagger.json",
+    "splitOpenapiDir": "openapi/"
+  },
+  "instructions": [
+    "To get the latest authoritative spec use: {rawBaseUrl}/{defaultBranch}/{files.openapiSpec}",
+    "Only pin a commit SHA when reproducibility is required."
+  ],
+  "security": {
+    "authSchemes": ["Api-Key", "BasicAuth"]
+  }
+}
