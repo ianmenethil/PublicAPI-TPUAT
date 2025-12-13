@@ -1,0 +1,50 @@
+name: Daily API Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download Swagger JSON
+        run: |
+          curl -f -o swagger.json https://apiuat.travelpay.com.au/v2.0/help
+          if [ ! -s swagger.json ]; then
+            echo "Failed to download or empty file"
+            exit 1
+          fi
+
+      - name: Install Scalar CLI
+        run: npm install -g @scalar/cli
+
+      - name: Convert to OpenAPI 3.1
+        run: scalar openapi convert swagger.json --output openapi.json --version 3.1
+
+      - name: Split OpenAPI spec
+        run: scalar openapi split openapi.json --output-dir openapi/
+
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          if git diff --quiet swagger.json openapi.json openapi/; then
+            echo "No changes detected"
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add swagger.json openapi.json openapi/
+          git commit -m "Daily API update: download, convert, and split OpenAPI spec"
+          git push
