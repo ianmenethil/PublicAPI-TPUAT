@@ -1,0 +1,1 @@
+{"properties":{"bankAccount":{"$ref":"#/components/schemas/BankAccount"},"creditCard":{"$ref":"#/components/schemas/CreditCard"}},"xml":{"name":"CustomerAccountResponse"},"type":"object"}

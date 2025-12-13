@@ -1,0 +1,1 @@
+{"description":"Pricing response.","properties":{"pricing":{"$ref":"#/components/schemas/Pricing","description":"Applicable pricing based on provided card and payment details."}},"xml":{"name":"PricingResponse"},"type":"object"}

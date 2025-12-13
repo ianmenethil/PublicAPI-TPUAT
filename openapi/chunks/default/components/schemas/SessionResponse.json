@@ -1,0 +1,1 @@
+{"properties":{"secureToken":{"description":"Token used to initialize the payment plugin.","type":"string"},"expiresAt":{"description":"Expiry of the secure token.","type":"string","format":"date-time"},"endpointUrl":{"description":"Payment plugin endpoint url","type":"string"}},"xml":{"name":"SessionResponse"},"type":"object"}

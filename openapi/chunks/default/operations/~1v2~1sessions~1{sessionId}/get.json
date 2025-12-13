@@ -1,0 +1,1 @@
+{"tags":["Sessions"],"summary":"Not supported","operationId":"Sessions_Get","parameters":[{"schema":{"type":"integer","format":"int32"},"name":"sessionId","in":"path","required":true}],"responses":{},"security":[{"Api-Key":[]}]}
