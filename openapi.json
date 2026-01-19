@@ -836,6 +836,306 @@
         }
       }
     },
+    "/v2/credit-requests/{requestUniqueId}": {
+      "get": {
+        "tags": [
+          "CreditRequests"
+        ],
+        "operationId": "CreditRequests_Get",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "name": "requestUniqueId",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Found the credit.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreditRequestResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreditRequestResponse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreditRequestResponse"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreditRequestResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unable to find the credit."
+          }
+        },
+        "security": [
+          {
+            "Api-Key": [],
+            "BasicAuth": []
+          }
+        ]
+      }
+    },
+    "/v2/credit-requests": {
+      "post": {
+        "tags": [
+          "CreditRequests"
+        ],
+        "summary": "Create credit request",
+        "operationId": "CreditRequests_Post",
+        "responses": {
+          "201": {
+            "description": "Credit created.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreditRequestResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreditRequestResponse"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreditRequestResponse"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreditRequestResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input detail.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/ModelState"
+                  },
+                  "type": "object"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/ModelState"
+                  },
+                  "type": "object"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/ModelState"
+                  },
+                  "type": "object"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/ModelState"
+                  },
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Merchant is forbidden to perform this operation.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "UniqueId is not unique.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "412": {
+            "description": "Not allowed due to limit or not eligible to process.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/ModelState"
+                  },
+                  "type": "object"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/ModelState"
+                  },
+                  "type": "object"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/ModelState"
+                  },
+                  "type": "object"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/ModelState"
+                  },
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Merchant is forbidden to perform this operation.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Something went wrong. Please try again.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Api-Key": [],
+            "BasicAuth": []
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreditsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreditsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/CreditsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/CreditsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/CreditsRequest"
+              }
+            }
+          },
+          "required": true
+        }
+      }
+    },
     "/v2/customers/{customerReference}": {
       "get": {
         "tags": [
@@ -5177,6 +5477,9 @@
       "description": "Manage card proxies."
     },
     {
+      "name": "CreditRequests"
+    },
+    {
       "name": "Customers",
       "description": "Manage customers"
     },
@@ -5859,6 +6162,110 @@
         },
         "type": "object"
       },
+      "CreditRequestResponse": {
+        "properties": {
+          "status": {
+            "readOnly": true,
+            "type": "integer",
+            "format": "int32",
+            "enum": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "CreditRequestResponseStatus": "Forbidden: 0; CountLimitReached: 1; AmountLimitReached: 2; InvalidPaymentProxy: 3; DuplicateRequest: 4; NotEligibleForCredit: 5; Success: 6"
+          },
+          "creditReference": {
+            "readOnly": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          "merchantCode": {
+            "type": "string"
+          },
+          "merchantName": {
+            "type": "string"
+          },
+          "creditAmount": {
+            "type": "number",
+            "format": "double"
+          },
+          "requestReason": {
+            "type": "string"
+          },
+          "cancelReason": {
+            "type": "string"
+          },
+          "rejectReason": {
+            "type": "string"
+          },
+          "requestStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "requestStatusString": {
+            "type": "string"
+          },
+          "requestUniqueId": {
+            "type": "string"
+          }
+        },
+        "xml": {
+          "name": "CreditRequestResponse"
+        },
+        "type": "object"
+      },
+      "CreditsRequest": {
+        "description": "Credits request",
+        "required": [
+          "customerReference",
+          "creditAmount",
+          "paymentAccountProxy",
+          "customerName",
+          "reason",
+          "requestUniqueId"
+        ],
+        "properties": {
+          "customerReference": {
+            "description": "Customer reference.",
+            "type": "string",
+            "maxLength": 20
+          },
+          "creditAmount": {
+            "description": "Payment amount",
+            "type": "number",
+            "format": "double"
+          },
+          "paymentAccountProxy": {
+            "description": "Payment Account Proxy.",
+            "type": "string",
+            "maxLength": 50
+          },
+          "customerName": {
+            "description": "Customer name",
+            "type": "string",
+            "maxLength": 100
+          },
+          "reason": {
+            "description": "Credit reason",
+            "type": "string",
+            "maxLength": 50
+          },
+          "requestUniqueId": {
+            "description": "Unique credit id provided by the merchant.",
+            "type": "string",
+            "maxLength": 50
+          }
+        },
+        "xml": {
+          "name": "CreditsRequest"
+        },
+        "type": "object"
+      },
       "CustomerResponse": {
         "description": "Customer information",
         "properties": {
@@ -6494,6 +6901,10 @@
             "type": "string",
             "format": "date-time"
           },
+          "websiteUrl": {
+            "description": "Website URL if any.",
+            "type": "string"
+          },
           "promotionCode": {
             "description": "Promotion code if any.",
             "type": "string"
@@ -6725,6 +7136,10 @@
             "description": "Date of birth. Customer must be atleast 16 years old.",
             "type": "string",
             "format": "date-time"
+          },
+          "websiteUrl": {
+            "description": "Website URL if any.",
+            "type": "string"
           },
           "promotionCode": {
             "description": "Promotion code if any.",
@@ -8362,7 +8777,7 @@
           "mobile": {
             "description": "Customer mobile in individual payment request entry",
             "type": "string",
-            "pattern": "^04[0-9]{8}$"
+            "pattern": "^(04[0-9]{8}|02[0-9]{7,8})$"
           },
           "merchantUniquePaymentId": {
             "description": "Unique payment id provided by the merchant. Can be used when Proxy payment is performed. (Optional)",
