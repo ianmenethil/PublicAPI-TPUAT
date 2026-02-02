@@ -1792,9 +1792,13 @@
                 3,
                 4,
                 5,
-                6
+                6,
+                7,
+                8,
+                9,
+                10
               ],
-              "TransactionType": "Charge: 1; InvoicePayment: 2; Refund: 3; Chargeback: 4; Recall: 5; FixedTermSettlement: 6"
+              "TransactionType": "Charge: 1; InvoicePayment: 2; Refund: 3; Chargeback: 4; Recall: 5; FixedTermSettlement: 6; SponsorInvoicePayment: 7; MerchantSettlementAdjustmentPayment: 8; Preauthorization: 9; Credit: 10"
             },
             "collectionFormat": "multi",
             "type": "array"
@@ -4574,9 +4578,13 @@
             3,
             4,
             5,
-            6
+            6,
+            7,
+            8,
+            9,
+            10
           ],
-          "TransactionType": "Charge: 1; InvoicePayment: 2; Refund: 3; Chargeback: 4; Recall: 5; FixedTermSettlement: 6"
+          "TransactionType": "Charge: 1; InvoicePayment: 2; Refund: 3; Chargeback: 4; Recall: 5; FixedTermSettlement: 6; SponsorInvoicePayment: 7; MerchantSettlementAdjustmentPayment: 8; Preauthorization: 9; Credit: 10"
         },
         "transactionTypeDisplay": {
           "description": "Transaction Type. Possible values:\r\n1. Charge\r\n2. Invoice\r\n3. Refund\r\n4. Chargeback\r\n5. Recall\r\n6. Fixed Term Settlement",
@@ -5131,9 +5139,13 @@
             3,
             4,
             5,
-            6
+            6,
+            7,
+            8,
+            9,
+            10
           ],
-          "TransactionType": "Charge: 1; InvoicePayment: 2; Refund: 3; Chargeback: 4; Recall: 5; FixedTermSettlement: 6"
+          "TransactionType": "Charge: 1; InvoicePayment: 2; Refund: 3; Chargeback: 4; Recall: 5; FixedTermSettlement: 6; SponsorInvoicePayment: 7; MerchantSettlementAdjustmentPayment: 8; Preauthorization: 9; Credit: 10"
         },
         "transactionTypeDisplay": {
           "description": "Transaction Type. Possible values:\r\n1. Charge\r\n2. Invoice\r\n3. Refund\r\n4. Chargeback\r\n5. Recall\r\n6. Fixed Term Settlement",
@@ -5489,9 +5501,13 @@
             3,
             4,
             5,
-            6
+            6,
+            7,
+            8,
+            9,
+            10
           ],
-          "TransactionType": "Charge: 1; InvoicePayment: 2; Refund: 3; Chargeback: 4; Recall: 5; FixedTermSettlement: 6"
+          "TransactionType": "Charge: 1; InvoicePayment: 2; Refund: 3; Chargeback: 4; Recall: 5; FixedTermSettlement: 6; SponsorInvoicePayment: 7; MerchantSettlementAdjustmentPayment: 8; Preauthorization: 9; Credit: 10"
         },
         "transactionTypeDisplay": {
           "description": "Transaction Type. Possible values:\r\n1. Charge\r\n2. Invoice\r\n3. Refund\r\n4. Chargeback\r\n5. Recall\r\n6. Fixed Term Settlement",
